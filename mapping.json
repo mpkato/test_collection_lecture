@@ -1,0 +1,25 @@
+{
+  "mappings": {
+    "properties": {
+      "paragraph_id": {
+        "type":     "integer"
+      },
+      "title": {
+        "type":     "text",
+        "analyzer": "kuromoji"
+      },
+      "book_title": {
+        "type":     "text",
+        "analyzer": "kuromoji"
+      },
+      "author": {
+        "type":     "text",
+        "analyzer": "kuromoji"
+      },
+      "body": {
+        "type":     "text",
+        "analyzer": "kuromoji"
+      }
+    }
+  }
+}

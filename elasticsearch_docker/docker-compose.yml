@@ -1,0 +1,23 @@
+version: '2'
+services:
+  elasticsearch:
+    build: ./docker
+    expose:
+      - 9200
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    tty: true
+    environment:
+      discovery.type: single-node
+    volumes:
+      - ./es_data:/usr/share/elasticsearch/data
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.1.1
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
