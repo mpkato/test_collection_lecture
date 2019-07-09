@@ -1,0 +1,9 @@
+{
+  "index": {
+    "similarity": {
+      "default": {
+        "type": "LMDirichlet"
+      }
+    }
+  }
+}
