@@ -2,7 +2,7 @@
   "index": {
     "similarity": {
       "default": {
-        "type": "LMDirichlet"
+        "type": "BM25"
       }
     }
   }
