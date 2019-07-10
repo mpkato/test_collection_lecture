@@ -1,3 +1,5 @@
 /elasticsearch_docker/es_data
 /tmp
+/interface
 /aozorabunko_json_data
+.ipynb_checkpoints
